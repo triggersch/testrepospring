@@ -17,7 +17,7 @@ public class HomeControlleur {
 	
 	@RequestMapping("/home.html")
 	public View showHomePage(Model model){
-		//model.addAttribute("current", new Date());
+		model.addAttribute("current", new Date());
 		JstlView view =  new JstlView();
 		view.setUrl("/WEB-INF/pages/home.jsp");;
 		return view;
